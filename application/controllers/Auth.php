@@ -17,6 +17,10 @@ class Auth extends CI_Controller {
         $this->load->model('List_model', 'list');
         $this->load->library('form_validation');
     }
+
+    public function index() {
+		$this->login();
+	}
     
     // login method
     public function login() {        
